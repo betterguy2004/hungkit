@@ -32,6 +32,15 @@ T6 = TaskCreate(subject="Code review",           activeForm="Reviewing code",   
 - Focus on last N lines first (most recent errors)
 - Look for stack traces, error codes, timestamps, repeated patterns
 
+**External Infrastructure Logs (mandatory):**
+If logs originate from an external infrastructure platform (Terraform, AWS, Kubernetes, Helm, etc.)
+and direct CLI access is unavailable:
+- Spawn `researcher` subagent IN PARALLEL with log analysis
+- Task: "Find official documentation and known solutions for: [paste error summary]"
+- Researcher MUST return: source URL + version-specific fix
+- Do NOT propose fix until researcher confirms against official docs
+- Cite source URL in diagnosis report to prevent hallucination
+
 `TaskUpdate(T1, status="completed")`
 
 ### Step 2: Scout Codebase

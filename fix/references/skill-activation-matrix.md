@@ -91,4 +91,5 @@ See `references/parallel-exploration.md` for detailed patterns.
 | "complex", "multi-step" | `ck:sequential-thinking` |
 | "which approach", "options" | `ck:brainstorm` |
 | "latest docs", "best practice" | `researcher` subagent |
+| Infra keywords in logs: "terraform", "aws", "azure", "gcp", "kubernetes", "helm", "provider", "state lock", "iac", "cloudformation", "module" | `researcher` subagent (mandatory — prevent hallucination on versioned infra APIs) |
 | Screenshot attached | `ck:ai-multimodal` |
