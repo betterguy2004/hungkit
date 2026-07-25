@@ -12,7 +12,11 @@
       "Read(///wsl.localhost/Ubuntu-24.04/home/hung/**)",
       "Read(///wsl.localhost/Ubuntu-24.04/home/hung/hungkit/**)",
       "Bash(mkdir -p .claude/skills)",
-      "Bash(mv _shared ask brainstorm ck-code-review ck-debug ck-plan common context-engineering cook cti-expert docs docs-seeker document-skills find-skills fix ghpm git journal mermaidjs-v11 research review-pr scout sequential-thinking watzup .claude/skills/)"
+      "Bash(mv _shared ask brainstorm ck-code-review ck-debug ck-plan common context-engineering cook cti-expert docs docs-seeker document-skills find-skills fix ghpm git journal mermaidjs-v11 research review-pr scout sequential-thinking watzup .claude/skills/)",
+      "Bash(mkdir -p /home/hung/hungkit/.claude/skills)",
+      "Bash(cp -r /mnt/c/Users/HungPhung/.claude/skills/senior-mindset /home/hung/hungkit/.claude/skills/)",
+      "Read(//home/hung/hungkit/.claude/skills/**)",
+      "Read(//home/hung/hungkit/.claude/skills/senior-mindset/**)"
     ]
   }
 }
