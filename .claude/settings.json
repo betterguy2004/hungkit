@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(kubectl delete *)",
+      "Bash(aws * delete-*)",
+      "Bash(aws * terminate-*)",
+      "Bash(terraform destroy*)",
+      "Bash(psql * -c *DROP*)",
+      "Bash(psql * -c *TRUNCATE*)",
+      "Bash(redis-cli FLUSHALL*)",
+      "Bash(redis-cli FLUSHDB*)"
+    ],
+    "ask": [
+      "Bash(kubectl drain *)",
+      "Bash(kubectl cordon *)",
+      "Bash(kubectl scale *)",
+      "Bash(kubectl patch *)",
+      "Bash(kubectl apply * -f *)",
+      "Bash(helm uninstall *)",
+      "Bash(helm upgrade *)",
+      "Bash(helm rollback *)",
+
+      "Bash(aws rds *)",
+
+      "Bash(terraform apply*)",
+      "Bash(terraform state rm*)",
+      "Bash(terraform import*)",
+
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git clean -fd *)",
+      "Bash(git push origin main*)",
+      "Bash(git push origin production*)",
+      "Bash(git reset --hard*)",
+
+      "Bash(rm *)"
+    ]
+  }
+}
